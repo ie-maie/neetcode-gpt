@@ -8,7 +8,8 @@ class Solution:
         x=init
         for i in range (0,   iterations):
             fx= 2*x
-            x= x - learning_rate*fx
+            t= learning_rate*fx
+            x= x - t
                 
         x = round(x,5)
         return x
