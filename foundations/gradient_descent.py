@@ -7,7 +7,8 @@ class Solution:
         if iterations==0 : return init
         x=init
         for i in range (0,   iterations):
-            x= x - learning_rate*2*x
+            fx= 2*x
+            x= x - learning_rate*fx
                 
         x = round(x,5)
         return x
